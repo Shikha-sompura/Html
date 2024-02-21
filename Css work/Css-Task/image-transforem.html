@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin: 200px auto;
+           
+        }
+        
+       
+        .img{
+            height: 200px;
+            width: 150px;
+            content: "";
+            position: relative;
+            top: 0px;
+            left: -100px;
+            transform: translate(-20px);
+            transition: 0.1s;
+            
+
+    }
+    .img:hover{
+        transform: translate(-10px);
+    }
+
+   .img::before{
+    content: "";
+    height: 150px;
+    width: 150px;
+    border: 2px solid;
+    position: absolute;
+    left: 15px;
+    top: 25px;
+    transform: translate(-5px);
+    opacity: 0;
+    transition: 0.1s;
+    
+   }
+   .img:hover::before{
+    transform: translate(2px);
+    opacity: 1;
+    
+   }
+    
+       
+        
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="img"><img src="image231.jpg" height="200px" width="180px" alt=""></div>
+    
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menue .menue-1{
+            display: inline-block;
+            padding: 0 5px;
+            position: relative;
+           margin: 0 20px;
+        }
+        .menue .menue-1 a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: large;
+
+        } 
+        .menue .menue-1 a::after{
+            content: "";
+            height: 3px;
+            width: 0%;
+            position: absolute;
+           top: 100%;
+           left: 0%;
+           background-color: black;
+           transition: 1s;
+
+        }
+        .menue .menue-1 a:hover::after{
+            width: 100%;
+        }
+       .menue-1 .menue-2{
+            width: 80px;
+            position: absolute;
+            top: 100%;
+            left: 0%;
+            background-color: rgb(121, 136, 235);
+            list-style: none;
+            padding: 0 5px;
+            text-align: center;
+            margin: 3px;
+            display: none;
+            
+       }
+        .menue-1:hover .menue-2{
+            display: block;
+
+        }
+        .menue-3 .menue-4 {
+            background-color: blueviolet;
+            width: 50%;
+            position: absolute;
+            left: 100%;
+            right: 0%;
+            top: 0%;
+            padding: 0 10px;
+            list-style: none;
+            display: none;
+
+        }
+        .menue-3:hover .menue-4{
+            display: block;
+        }
+
+
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="menue">
+        <li class="menue-1">
+            <a href="">Home</a>
+        </li>
+        <li class="menue-1">
+            <a href="">About</a>
+        </li>
+        <li class="menue-1">
+            <a href="">Men'swear</a>
+            <ul class="menue-2">
+                <li class="menue-3">Home1
+                    <ul class="menue-4">
+                        <li>123</li>
+                        <li>456</li>
+                    </ul>
+                </li>
+                <li>Home2</li>
+                <li>Home3</li>
+            </ul>
+        </li>
+        <li class="menue-1">
+            <a href="">women'swear</a>
+        </li>
+        <li class="menue-1">
+            <a href="">Shortcodes</a>
+        </li>
+        <li class="menue-1">
+            <a href="">Contacet</a>
+        </li>
+    </div>
+</body>
+</html>

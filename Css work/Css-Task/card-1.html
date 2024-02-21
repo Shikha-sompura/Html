@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-card{
+            height: 400px;
+            width: 230px;
+            /* border: 2px solid; */
+            margin: 200px auto;
+            position: relative;
+            box-shadow: 0 0 10px 10px  #D6D6D6;
+        }
+        .main-card .new{
+            padding: 5px;
+            background-color: red;
+            width: 30px;
+            /* transform: translateX(180px); */
+            position: absolute;
+            right: 0;
+        }
+        .main-card .img{
+            position: absolute;
+            top:25px;
+            height: 200px;
+            width: 100%;
+        }
+        .main-card .contain{
+            position: absolute;
+            bottom: 80px;
+            height: 75px;
+            width: 100%;
+            text-align: center;
+            
+        }
+       
+        .box{
+            height: 40px;
+            width: 190px;
+            background-color: aqua;
+            position: absolute;
+            bottom: 30px;
+            left: 20px;
+            text-align: center;
+           
+
+        }
+        .box-1{
+            height: 50px;
+            width: 200px;
+            border: 6px solid aqua;
+            position: absolute;
+            bottom: -10px;
+            left: -10px;
+            opacity: 0;
+            transition: 1s;
+           
+        }
+        .box:hover>.box-1{
+            opacity: 1;
+
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="main-card">
+        <div class="new">new</div>
+        <div class="img"><img src="image-2.jpg" height="120%" width="100%"  alt=""></div>
+        <div class="contain">
+            <p>Gabi Full Sleeve Sweatshirt</p>
+            <p>$45.99 <strike>$69.71</strike></p>
+        </div>
+        <div class="box">
+            <a href="">Shop Now</a>
+            <div class="box-1"></div>
+    </div>
+</body>
+</html>

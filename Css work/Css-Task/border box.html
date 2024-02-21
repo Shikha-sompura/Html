@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .center{
+            height: 200px;
+            width: 200px;
+            border: 2px solid ;
+            margin: 200px auto;
+            overflow: hidden;
+        }
+        .out{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(118, 112, 112, .5);
+            transform: translate(-100%,100%);
+            transition: 1s;
+            opacity: 0;
+
+        }
+        .center:hover .out{
+           opacity: 1;
+            transform: translate(0%,0%);
+        }
+        .in{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(155, 142, 142, .5);
+            transform: translate(100%,-200%);
+            transition: 1s;
+            opacity: 0;
+        }
+        .center:hover .in{
+            opacity: 1;
+            transform: translate(0%,-100%);
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div class="out"></div>
+        <div class="in"></div>
+
+    </div>
+</body>
+</html>

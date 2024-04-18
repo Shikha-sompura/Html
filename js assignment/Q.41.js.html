@@ -1,0 +1,25 @@
+Q.41:- Write a JavaScript program to get the current date?  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let dateObj = new Date();
+ 
+ let month = String(dateObj.getMonth() + 1)
+     .padStart(2, '0');
+      
+ let day = String(dateObj.getDate())
+     .padStart(2, '0');
+  
+ let year = dateObj.getFullYear();
+ let output = day + '/' + month + '/' + year;
+  
+ console.log(output);
+    </script>
+</body>
+</html>

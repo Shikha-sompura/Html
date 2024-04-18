@@ -1,0 +1,41 @@
+Q.17 :- What is the result of the expression true && false || false && true?  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //true && false || false && true
+        function A() {
+  console.log("called A");
+  return false;
+}
+function B() {
+  console.log("called B");
+  return true;
+}
+
+console.log(B() || A());
+// Logs "called B" due to the function call,
+// then logs true (which is the resulting value of the operator)
+
+//
+function c() {
+  console.log("called c");
+  return false;
+}
+function d() {
+  console.log("called d");
+  return true;
+}
+
+console.log(c() && d());
+// Logs "called A" to the console due to the call for function A,
+// && evaluates to false (function A returns false), then false is logged to the console;
+// the AND operator short-circuits here and ignores function B
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+Q.18 :-  What is a Loop and Switch Case in JavaScript define that ? 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+   <!--swich case-->
+    <h2>JavaScript switch</h2>
+
+     <p id="demo"></p>
+
+<script>
+    let text;
+    switch (new Date().getDay()) {
+  default:
+    text = "Looking forward to the Weekend";
+    break;
+  case 6:
+    text = "Today is Saturday";
+    break;
+  case 0:
+    text = "Today is Sunday";
+}
+document.getElementById("demo").innerHTML = text;
+</script> 
+<!--Loop
+        JavaScript supports different kinds of loops:
+
+        for - loops through a block of code a number of times
+        while - loops through a block of code while a specified condition is true
+        do/while - also loops through a block of code while a specified condition is true
+-->  
+     <!--1) for Loop
+         1) assissgme..
+         2) condition
+         3) inc/dec -->  
+
+       <script>
+        for(let j=1;j<=10;j++){
+            if(j==5)
+            {
+                break;
+            }
+            document.write(j)
+        }
+       </script>
+
+
+
+        
+
+</body>
+</html>
